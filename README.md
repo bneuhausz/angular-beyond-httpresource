@@ -1,5 +1,8 @@
 # AngularBeyondHttpresource
 
+[Article based on this repo](https://bneuhausz.dev/blog/angular-beyond-httpresource)
+[Live demo](https://bneuhausz.dev/angular-beyond-httpresource)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
 
 ## Development server
