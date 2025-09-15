@@ -1,16 +1,24 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink],
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
+    <h1>{{ title() }}</h1>
+    <p>
+      <a routerLink="/posts-resource">Posts with resource</a>
+      <a routerLink="/posts-rxresource">Posts with rxResource</a>
+    </p>
 
     <router-outlet />
   `,
-  styles: [],
+  styles: [`
+    a {
+      margin-right: 15px;
+    }
+  `],
 })
 export class App {
-  protected readonly title = signal('angular-beyond-httpresource');
+  protected readonly title = signal('Angular - Beyond httpResource');
 }
